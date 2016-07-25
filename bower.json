@@ -1,0 +1,23 @@
+{
+  "name": "nicks-websites",
+  "version": "1.0.0",
+  "homepage": "https://github.com/nickproz/website-framework",
+  "authors": [
+    "nickproz <nick.prozorovsky@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+	"bootstrap": "latest",
+	"slick-carousel": "latest",
+	"Hover": "latest",
+	"fontawesome": "latest"
+  }
+}
