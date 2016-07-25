@@ -1,6 +1,6 @@
 # Setup
 
-Use the following commands in your vagrant development environment to get this up and running
+Use the following commands in your vagrant development environment to get this up and running:
 ```bash
 git clone https://github.com/nickproz/website-framework
 cd website-framework
