@@ -18,6 +18,7 @@
 	"bootstrap": "latest",
 	"slick-carousel": "latest",
 	"Hover": "latest",
-	"fontawesome": "latest"
+	"fontawesome": "latest",
+	"fullpage": "latest"
   }
 }
