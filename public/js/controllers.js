@@ -1,0 +1,1 @@
+app.controller("partial1Controller",["$scope","$http","$routeParams",function(o,r,t){}]),app.controller("partial2Controller",["$scope","$http","$routeParams",function(o,r,t){}]),app.controller("partial3Controller",["$scope","$http","$routeParams",function(o,r,t){}]);
