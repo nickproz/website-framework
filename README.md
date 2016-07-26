@@ -15,3 +15,8 @@ gulp
 - `public/media` - all your media files (images, videos, GIFs etc.) go here.
 
 **Do not edit anything under the `public\css` and `public\js` folders.** All things there are auto-generated and any changes you make there will get overwritten by Gulp.
+
+# Dependencies
+
+After running bower install, Jquery and Angular will be installed as frameworks.
+Optional dependencies installed include: Bootstrap, hover, font awesome, slick, and full page.
