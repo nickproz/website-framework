@@ -1,9 +1,9 @@
 {
   "name": "nicks-websites",
   "version": "1.0.0",
-  "homepage": "https://github.com/nickproz/website-framework",
+  "homepage": "https://github.com/nickproz/website-framework-angular",
   "authors": [
-    "nickproz <nick.prozorovsky@gmail.com>"
+      "nickproz <nick.prozorovsky@gmail.com>"
   ],
   "ignore": [
     "**/.*",
@@ -19,7 +19,6 @@
 	"slick-carousel": "latest",
 	"Hover": "latest",
 	"fontawesome": "latest",
-	"fullpage": "latest",
 	"angular": "~1.3.13",
     "angular-route": "~1.3.14"
   }

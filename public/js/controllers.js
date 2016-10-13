@@ -1,0 +1,1 @@
+app.controller("singleRouteController",["$scope","$http",function(o,e){console.log("This is the single route controller!")}]),app.controller("multipleRoutesController",["$scope","$http","$routeParams",function(o,e,t){o.page=t.page,console.log("This is the multiple routes controller! Try modifying the number in the in the url.")}]);
