@@ -1,5 +1,5 @@
 var app = angular.module('nicks-website',['ngRoute']);
-
+// Angular Routing
 app.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
 		.when('/single-route', {

@@ -1,3 +1,13 @@
+// All less files are imported here for compilation. Files that require variables
+// or mixins from a different file should be placed lower than the file it requires.
+
+// All sections
+// --------------------------------------------------
+@import "breakpoints";
+@import "z-index";
 @import "variables";
 @import "mixins";
+
+// Individual sections
+// --------------------------------------------------
 @import "base";
