@@ -1,16 +1,20 @@
-var app = angular.module('nicks-website',['ngRoute']);
-// Angular Routing
+var app = angular.module('framework',['ngRoute']);
+
 app.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
-		.when('/single-route', {
-			templateUrl: 'partials/single-route.html',
-			controller: 'singleRouteController'
+		.when('/partial1', {
+			templateUrl: 'partials/partial1.html',
+			controller: 'partial1Controller'
 		})
-		.when('/multiple-routes/:page', {
-			templateUrl: 'partials/multiple-routes.html',
-			controller: 'multipleRoutesController'
+		.when('/partial2', {
+			templateUrl: 'partials/partial2.html',
+			controller: 'partial2Controller'
+		})
+		.when('/partial3/:rank', {
+			templateUrl: 'partials/partial3.html',
+			controller: 'partial3Controller'			
 		})
 		.otherwise({
-			redirectTo: '/'
+			redirectTo: '/partial1'
 		});
 }]);

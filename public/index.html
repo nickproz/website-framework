@@ -31,15 +31,17 @@
   <!-- Dependencies Scripts -->
   <script src="./dependencies/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="./dependencies/slick-carousel/slick/slick.js"></script>
+  <script src="./dependencies/fullpage/dist/jquery.fullpage.min.js"></script>
+  
+  <script src="./js/app.js"></script>
+  <script src="./js/controllers.js"></script>
+  <script src="./js/services.js"></script>
   <script src="./js/script.js"></script>
 </head>
 
-<body ng-app="nicks-website">
-
-    <div><a href="#/single-route" class="button">Single Route</a></div>
-    <div><a href="#/multiple-routes/1" class="button">Multiple Routes</a></div>
-
-    <div ng-view></div>
-
+<body ng-app="framework">
+  
+	<div ng-view></div>
+	
 </body>
 </html>
