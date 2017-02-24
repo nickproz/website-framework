@@ -1,0 +1,22 @@
+/*
+All less files are imported here for compilation. Files that require variables
+or mixins from a different file should be placed lower than the file it requires.
+
+example (creation): $zIndex-10--navigationMenu: $zIndex-10;
+example (usage): z-index: $zIndex-10--navigationMenu;
+
+-------------------------------------------
+|               All Sections              |
+-------------------------------------------
+*/
+@import "util/breakpoints";
+@import "util/z-index";
+@import "global/variables";
+@import "global/mixins";
+@import "global/styles";
+
+/*
+-------------------------------------------------
+|               Individual Sections             |
+-------------------------------------------------
+*/

@@ -1,0 +1,1 @@
+app.controller("partial1Controller",["$scope","$http","$routeParams",function(r,o,t){}]),app.controller("partial2Controller",["$scope","$http","$routeParams",function(r,o,t){}]),app.controller("partial3Controller",["$scope","$http","$routeParams",function(r,o,t){r.rank=t.rank}]);

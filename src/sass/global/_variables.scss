@@ -1,0 +1,26 @@
+/*
+All global variables are stored here. They should be created based on the following format:
+<property>-<value>[--componentName]. Variables used for different sections are
+separated by by comment sections.
+
+example (creation): $color-background--navbar: red;
+example (usage): background-color: $color-background--navbar;
+
+-------------------------------------
+|               Colors              |
+-------------------------------------
+*/
+
+/*
+------------------------------------
+|               Sizes              |
+------------------------------------
+*/
+
+/*
+------------------------------------
+|               Fonts              |
+------------------------------------
+*/
+
+$font-family--site:       'Rubik', sans-serif;

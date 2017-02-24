@@ -1,0 +1,30 @@
+/*
+Z-index values should always be defined here. This allows us to, at a glance,
+determine relative layers of our application and prevents bugs arising from
+arbitrary z-index values. Do not edit the z-index scale! Only add application
+scoped z-index values.
+
+example (creation): $zIndex-10--navigationMenu: $zIndex-10;
+example (usage): z-index: $zIndex-10--navigationMenu;
+
+--------------------------------------------
+|               Z-index Scale              |
+--------------------------------------------
+*/
+$zIndex-1:   100;
+$zIndex-2:   200;
+$zIndex-3:   300;
+$zIndex-4:   400;
+$zIndex-5:   500;
+$zIndex-6:   600;
+$zIndex-7:   700;
+$zIndex-8:   800;
+$zIndex-9:   900;
+$zIndex-10: 1000;
+
+/*
+--------------------------------------------------
+|               Z-index Applications             |
+--------------------------------------------------
+*/
+$zIndex-10--navigationMenu:        $zIndex-10;
