@@ -10,7 +10,7 @@ gulp
 
 # Dependencies
 - After running `npm install`, all gulp development packages will be installed.
-- After running `bower install`, Jquery, semantic, hover, font awesome, and full page will be installed.
+- After running `bower install`, jQuery, hover, font awesome, and angular will be installed.
 
 # Notes
 - `dist/index.html` - this html file is served by default.
