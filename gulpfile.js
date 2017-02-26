@@ -15,7 +15,7 @@ const gulpUtil = require('gulp-util');
 gulp.task('sass', function () {
     gulp.src('src/sass/*.scss')
         .pipe(sass().on('error', gulpUtil.log))
-        .pipe(gulp.dest('dist/css'));
+        .pipe(gulp.dest('dist/'));
 });
 
 /**
@@ -32,9 +32,9 @@ gulp.task('clean-scripts', function () {
  */
 gulp.task('js', ['clean-scripts'], function() {
   gulp.src('src/js/*.js')
-    // .pipe(concat('script.js'))  // Comment this line in to concatenate all files into a single file
+    .pipe(concat('script.js'))
     .pipe(uglify().on('error', gulpUtil.log)) // Comment this line out for debugging
-    .pipe(gulp.dest('dist/js'));
+    .pipe(gulp.dest('dist/'));
 });
 
 /**

@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "homepage": "https://www.nickproz.com",
   "authors": [
-      "nickproz <nick.prozorovsky@gmail.com>"
+    "nickproz <nick.prozorovsky@gmail.com>"
   ],
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp sass && gulp js"
+  },
   "dependencies": {
-      "gulp": "^3.9.1",
-      "gulp-uglify": "^1.5.4",
-      "gulp-clean": "^0.3.2",
-      "gulp-webserver": "^0.9.1",
-      "gulp-sass": "^2.3.2",
-      "gulp-concat": "^2.6.0",
-      "gulp-util": "~3.0.8"
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^1.5.4",
+    "gulp-clean": "^0.3.2",
+    "gulp-webserver": "^0.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-util": "~3.0.8"
   }
 }

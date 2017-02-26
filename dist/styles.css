@@ -1,0 +1,99 @@
+/*
+All less files are imported here for compilation. Files that require variables
+or mixins from a different file should be placed lower than the file it requires.
+
+example (creation): $zIndex-10--navigationMenu: $zIndex-10;
+example (usage): z-index: $zIndex-10--navigationMenu;
+
+-------------------------------------------
+|               All Sections              |
+-------------------------------------------
+*/
+/*
+Below are standard media breakpoints. Always use mobile-first media queries,
+as you should be designing mobile-first. If a mobile-first approach can not
+be used for whatever reason, max-width queries are also listed below.
+
+example (usage): @include for-desktop-up { background-color: red; }
+
+------------------------------------------
+|               Breakpoints              |
+------------------------------------------
+*/
+/*
+---------------------------------------------------------
+|               Mobile-first Media Queries              |
+---------------------------------------------------------
+*/
+/*
+-------------------------------------------------------------------------
+|               Max-width Media Queries (Non-mobile First)              |
+-------------------------------------------------------------------------
+*/
+/*
+Z-index values should always be defined here. This allows us to, at a glance,
+determine relative layers of our application and prevents bugs arising from
+arbitrary z-index values. Do not edit the z-index scale! Only add application
+scoped z-index values.
+
+example (creation): $zIndex-10--navigationMenu: $zIndex-10;
+example (usage): z-index: $zIndex-10--navigationMenu;
+
+--------------------------------------------
+|               Z-index Scale              |
+--------------------------------------------
+*/
+/*
+--------------------------------------------------
+|               Z-index Applications             |
+--------------------------------------------------
+*/
+/*
+All global variables are stored here. They should be created based on the following format:
+<property>-<value>[--componentName]. Variables used for different sections are
+separated by by comment sections.
+
+example (creation): $color-background--navbar: red;
+example (usage): background-color: $color-background--navbar;
+
+-------------------------------------
+|               Colors              |
+-------------------------------------
+*/
+/*
+------------------------------------
+|               Sizes              |
+------------------------------------
+*/
+/*
+------------------------------------
+|               Fonts              |
+------------------------------------
+*/
+/*
+All mixins are stored here.
+
+example (usage): @include vertical-center();
+
+--------------------------------------------
+|               General Mixins             |
+--------------------------------------------
+*/
+/*
+----------------------------------------------
+|               General Styling              |
+---------------------------------------------
+*/
+html, body {
+  font-family: "Rubik", sans-serif; }
+
+/*
+---------------------------------------------
+|               Global Styling              |
+---------------------------------------------
+*/
+/*
+-------------------------------------------------
+|               Individual Sections             |
+-------------------------------------------------
+*/
