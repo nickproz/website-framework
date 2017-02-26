@@ -1,3 +1,8 @@
+/*
+--------------------------------------------------
+|               Angular Controllers              |
+-------------------------------------------------
+*/
 app.controller('partial1Controller', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
 
 }]);

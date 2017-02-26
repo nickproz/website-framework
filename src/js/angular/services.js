@@ -1,6 +1,13 @@
+/*
+-----------------------------------------------
+|               Backend Services              |
+----------------------------------------------
+*/
 var frameworkServices = angular.module('frameworkServices', []);
 
-// Service for shared data among controllers
+/*
+ * Service for shared data among controllers
+ */
 frameworkServices.factory('CommonData', function(){
     var data = "";
     return{
@@ -13,11 +20,13 @@ frameworkServices.factory('CommonData', function(){
     }
 });
 
-// Service for our User API requests
+/*
+ * Service for our user API requests
+ */
 frameworkServices.factory('Users', function($http, $window) {
-	
+
 	var baseUrl = $window.sessionStorage.baseurl + '/api/users/';
-	
+
 	// Route to correct HTTP API call
     return {
 		createUser : function(user) {
@@ -30,7 +39,7 @@ frameworkServices.factory('Users', function($http, $window) {
 				return $http.get(baseUrl + query);
 		},
 		getUser : function(id) {
-			return $http.get(baseUrl + id);	
+			return $http.get(baseUrl + id);
 		},
 		updateUser : function(user, id) {
 			return $http.put(baseUrl + id, user);

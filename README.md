@@ -18,4 +18,4 @@ gulp
 - `src/sass` folder - all sass files here will be compiled to `dist/styles.css`.
 - `src/js` folder - all javascript files here will be uglified and put in `dist/script.js`.
 
-**Do not edit `styles.css` and `script.js` in the `dist` folder.** All things there are auto-generated and any changes you make there will get overwritten by Gulp.
+**Do not edit anything in the `dist/css` or `dist/js` directories.** All things there are auto-generated and any changes you make there will get overwritten by Gulp.

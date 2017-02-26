@@ -1,3 +1,8 @@
+/*
+----------------------------------------------
+|               Angular Routing              |
+---------------------------------------------
+*/
 var app = angular.module('framework',['ngRoute']);
 
 app.config(['$routeProvider', function($routeProvider) {
@@ -12,7 +17,7 @@ app.config(['$routeProvider', function($routeProvider) {
 		})
 		.when('/partial3/:rank', {
 			templateUrl: 'partials/partial3.html',
-			controller: 'partial3Controller'			
+			controller: 'partial3Controller'
 		})
 		.otherwise({
 			redirectTo: '/partial1'
