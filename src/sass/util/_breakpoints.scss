@@ -3,43 +3,63 @@ Below are standard media breakpoints. Always use mobile-first media queries,
 as you should be designing mobile-first. If a mobile-first approach can not
 be used for whatever reason, max-width queries are also listed below.
 
-example (usage): @media #{(break-tablet-portrait)} {}
+example (usage): @include for-desktop-up { background-color: red; }
 
 ------------------------------------------
 |               Breakpoints              |
 ------------------------------------------
 */
-$mobile-small: 320px;
-$mobile: 480px;
-$tablet-portrait: 768px;
-$tablet-landscape: 1024px;
-$desktop: 1280px;
+$mobile-lower-boundary: 320px;
+$tablet-portrait-lower-boundary: 480px;
+$tablet-landscape-lower-boundary: 768px;
+$desktop-lower-boundary: 1024px;
+$desktop-large-lower-boundary: 1280px;
+
+// Alternative breakpoints
+// $mobile-lower-boundary: 300px;
+// $tablet-portrait-lower-boundary: 600px;
+// $tablet-landscape-lower-boundary: 900px;
+// $desktop-lower-boundary: 1200px;
+// $desktop-large-lower-boundary: 1800px;
 
 /*
 ---------------------------------------------------------
 |               Mobile-first Media Queries              |
 ---------------------------------------------------------
 */
-$break-mobile-small: "only screen and (min-width: $mobile-small)";
-$break-mobile: "only screen and (min-width: $mobile)";
-$break-tablet-portrait: "only screen and (min-width: $tablet-portrait)";
-$break-tablet-landscape: "only screen and (min-width: $tablet-landscape)";
-$break-desktop: "only screen and (min-width: $desktop)";
-
-/*
------------------------------------------------------------------------
-|               Max-width Breakpoints (Non-mobile First)              |
------------------------------------------------------------------------
-*/
-$mobile-max: ($tablet-portrait - 1);
-$tablet-portrait-max: ($tablet-landscape - 1);
-$tablet-landscape-max: ($desktop - 1);
+@mixin for-mobile-small-only {
+  @media only screen and (max-width: #{$mobile-lower-boundary - 1}) { @content; }
+}
+@mixin for-mobile-up {
+  @media only screen and (min-width: $mobile-lower-boundary) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media only screen and (min-width: $tablet-portrait-lower-boundary) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media only screen and (min-width: $tablet-landscape-lower-boundary) { @content; }
+}
+@mixin for-desktop-up {
+  @media only screen and (min-width: $desktop-lower-boundary) { @content; }
+}
+@mixin for-desktop-large-up {
+  @media only screen and (min-width: $desktop-large-lower-boundary) { @content; }
+}
 
 /*
 -------------------------------------------------------------------------
 |               Max-width Media Queries (Non-mobile First)              |
 -------------------------------------------------------------------------
 */
-$break-mobile-max: "only screen and (max-width: $mobile-max)";
-$break-tablet-portrait-max: "only screen and (max-width: $tablet-portrait-max)";
-$break-tablet-landscape-max: "only screen and (max-width: $tablet-landscape-max)";
+@mixin for-mobile-only {
+  @media only screen and (min-width: $mobile-lower-boundary) and (max-width: #{$tablet-portrait-lower-boundary - 1}) { @content; }
+}
+@mixin for-tablet-portrait-only {
+  @media only screen and (min-width: $tablet-portrait-lower-boundary) and (max-width: #{$tablet-landscape-lower-boundary - 1}) { @content; }
+}
+@mixin for-tablet-landscape-only {
+  @media only screen and (min-width: $tablet-landscape-lower-boundary) and (max-width: #{$desktop-lower-boundary - 1}) { @content; }
+}
+@mixin for-desktop-only {
+  @media only screen and (min-width: $desktop-lower-boundary) and (max-width: #{$desktop-large-lower-boundary - 1}) { @content; }
+}

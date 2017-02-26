@@ -14,7 +14,7 @@ Below are standard media breakpoints. Always use mobile-first media queries,
 as you should be designing mobile-first. If a mobile-first approach can not
 be used for whatever reason, max-width queries are also listed below.
 
-example (usage): @media break-tablet-portrait {}
+example (usage): @include for-desktop-up { background-color: red; }
 
 ------------------------------------------
 |               Breakpoints              |
@@ -24,11 +24,6 @@ example (usage): @media break-tablet-portrait {}
 ---------------------------------------------------------
 |               Mobile-first Media Queries              |
 ---------------------------------------------------------
-*/
-/*
------------------------------------------------------------------------
-|               Max-width Breakpoints (Non-mobile First)              |
------------------------------------------------------------------------
 */
 /*
 -------------------------------------------------------------------------
@@ -92,6 +87,11 @@ example (usage): @include vertical-center();
 html, body {
   font-family: "Rubik", sans-serif; }
 
+/*
+---------------------------------------------
+|               Global Styling              |
+---------------------------------------------
+*/
 /*
 -------------------------------------------------
 |               Individual Sections             |
